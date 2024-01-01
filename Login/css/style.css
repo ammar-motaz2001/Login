@@ -1,0 +1,34 @@
+body{
+    background-image: url("../imgs/cihm7wul5po51.webp");
+    background-size: cover;
+    height: 100vh;
+    background-position: center center;
+    /* filter: blur(5px); */
+    
+
+}
+
+.login{
+    
+    backdrop-filter:blur(10px);
+    text-decoration: none;
+}
+.container input {
+    background-color: rgba(255, 255, 255, 0.5); /* قيمة الـ 0.5 تعبر عن شفافية 50% */
+    border: none; /* لإزالة الحدود */
+    border-radius: 5px; /* لتحديد زوايا مدورة إذا كنت ترغب في ذلك */
+}
+
+/* إضافة تحديد الحقل عند التركيز */
+.container input:focus {
+    outline: none;
+    border: 1px solid #ced4da; /* لتعيين حدود خفيفة عند التركيز */
+}
+
+.login .imges{
+    width: 100px;
+}
+.login .link{
+    text-decoration: none;
+    color:white
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/signup.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="login d-flex align-items-center flex-column  pt-3 mt-5 text-white  rounded-2 m-auto w-100 h-100 shadow">
+        <h1 class=" mt-5">
+           Register
+        </h1>
+
+        <img src="imgs/User-Profile-PNG.png" class="imges" alt="">
+        <div class="container">
+            <div class="row">
+                <div class="col-8 m-auto">
+                    <label for="username" class="pb-1">
+                        <i class="fa-solid fa-user"></i>
+                        <span class="fw-bold"> User Name :</span>
+                    </label>
+                    <input type="text"  id="username" class="form-control w-75" oninput="validationName()"   placeholder="user@mail.com " autofocus>                    
+                </div>
+            </div>
+            <div class="row pt-3">
+                <div class="col-8 m-auto">
+                    <label for="email" class="pb-1">
+                        <i class="fa-solid fa-lock"></i>
+                        <span class="fw-bold">E-mail :</span>
+                    </label>
+                    <input type="text" id="email"  class="form-control w-75" oninput=" validationEmail()" placeholder="Password : ">
+                    <p id="pName " class="d-none"> Hellp</p>
+                    
+                </div>
+            </div>
+            <div class="row pt-3">
+                <div class="col-8 m-auto">
+                    <label for="password" class="pb-1">
+                        <i class="fa-solid fa-lock"></i>
+                        <span class="fw-bold">Password :</span>
+                    </label>
+                    <input type="password" id="password" class="form-control w-75" oninput="validaionPassword()" placeholder="Password : ">
+                    <p class="text-start pt-4"> Have an Account ? <a href="index.html" class="link"> Login </a></p>
+
+                    
+                </div>
+            </div>
+            </div>
+            <p id="para-5" class="d-none text-danger fw-semibold">Failed To Login ,Try again <i class="fa-solid fa-face-sad-tear"></i></p>
+            <p id="para" class="d-none text-success fw-semibold">Sucess <i class="fa-regular fa-face-laugh-beam"></i></p>
+            <button class="btn btn-outline-info"  id="button-1" onclick=" userRegister()"> Register </button>
+    </div>
+
+    <script  src="JS/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>Document</title>
+</head>
+<body>
+    <div class="login d-flex align-items-center flex-column  pt-3 mt-5 text-white  rounded-2 m-auto w-75 h-75 shadow">
+        <h1 class=" mt-5">Login</h1>
+        <img src="imgs/User-Profile-PNG.png" class="imges" alt="">
+        <div class="container">
+            <div class="row">
+                <div class="col-8 m-auto">
+                    <label for="login" class="pb-1">
+                        <i class="fa-solid fa-user"></i>
+                        <span class="fw-bold"> E-mail:</span>
+                    </label>
+                    <input type="text"  id="login" class="form-control w-75 "  placeholder="user@mail.com ">
+                    <p class="d-none text-danger" id="par-1">invalid E-mail ,try again</p>
+                    
+                </div>
+            </div>
+            <div class="row pt-3">
+                <div class="col-8 m-auto">
+                    <label for="password-login" class="pb-1">
+                        <i class="fa-solid fa-lock"></i>
+                        <span class="fw-bold">Password :</span>
+                    </label>
+                    <input type="password" id="password-login" class="form-control w-75"  placeholder="Password : ">
+                    <div class="alert alert-danger d-none" id="alert-site">sorry,Your Site must start with HTTP or HTTPS and With from 5 TO 20 character and at the end with .com </div>
+                    <p class="text-start pt-4">Don't Have an Account ? <a href="signup.html" class="link"> Sign Up </a></p>
+
+                    
+                </div>
+            </div>
+                
+            </div>
+            <p id="para-6" class="d-none text-danger fw-semibold">Invaild email or password ,Try again <i class="fa-solid fa-face-sad-tear"></i></p>
+            <p id="para-7" class="d-none text-success fw-semibold">Success <i class="fa-solid fa-face-sad-tear"></i></p>
+
+            <button class="btn btn-outline-light" onclick="login()" id="button-2"> 
+                  Login </button>
+    </div>
+
+
+
+
+
+   <script src="JS/main.js"></script>
+</body>
+</html>
